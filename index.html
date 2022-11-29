@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b05f4c9c1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <style>
+        *{box-sizing:border-box;}
+        body{
+            font-family: Verdana,sans-serif;
+            line-height:1.2;
+        }
+        .prph{
+            position:relative;
+            max-width:1500px;
+            margin:auto;
+        }
+        .prph .text{
+            position:absolute;
+            border:2px solid springgreen;
+            color:khaki;
+            text-align: center;
+            border-radius:40px 10px 40px 10px;
+            padding:7px;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .nav{
+            list-style: none;
+            padding:0;
+            margin:0;
+            overflow: hidden;
+            background-color:#ccc;
+            position:absolute;
+            bottom:-17px;
+            left:50%;
+            transform: translateX(-50%);
+            border-radius:9px;
+        }
+        .nav li{
+            float:left;
+        }
+        .nav li a{
+            display:block;
+            text-decoration: none;
+            color:black;
+            text-align: center;
+            padding:13px;
+            margin-left:10px;
+            margin-right:10px;
+        }
+        .nav li:hover{
+            background-color:grey;
+        }
+        .wrapper{
+            max-width:1000px;
+            margin:auto;
+            margin-top:70px;
+            padding:30px;
+        }
+        .phimg{
+            display:flex;
+            flex-direction: column;
+            gap:5px;
+        }
+        .cont{
+            background-color:#ddd;
+            padding:25px;
+            margin-top:15px;
+        }
+        input[type=text]{
+            width:100%;
+            padding: 13px;
+            border:1px solid #aaa;
+        }
+        input[type=submit]{
+            width:100%;
+            padding:13px;
+            margin-top:15px;
+            border:1px solid #ccc;
+            color:white;
+            background-color:grey;
+            transition:0.3s ease;
+        }
+        input[type=submit]:hover{
+            background-color:#bbb;
+        }
+        .cont #byme{
+            color:springgreen;
+        }
+        .cont #byme a{
+            text-decoration: none;
+            color:springgreen;
+            transition: 0.7s ease;
+        }
+        .cont #byme a:hover{
+            color:crimson;
+        }
+        @media only screen and (max-width:665px){
+            .nav{
+                position:absolute;
+                display:flex;
+                justify-content:center;
+                transform: translateY(100%);
+                width:100%;
+                left:0;
+                padding:15px;
+                transition: 1s ease;
+                margin-bottom:21px;
+                border-radius:0 0 10px 10px;
+          }
+          .nav li a:hover{
+            color:white;
+          }
+        }
+        @media only screen and (max-width:900px){
+            .text h4{
+                display:none;
+            }
+        }
+    </style>
+
+    <div class="prph">
+        <img style="width:100%;height:auto;" src="https://scontent.ftbs10-1.fna.fbcdn.net/v/t1.6435-9/176168401_147076677420258_6379270776002618008_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_eui2=AeFcuqOUbaDGVOT4qq1sGuLhrtlLPXoAF1Ku2Us9egAXUvfEnm3_hKi8Fodx9drq6AysmEF279VfQf1TIjbbBSzq&_nc_ohc=NcioDD7Rvk0AX_ww4sm&tn=-LuJR1GGKhFv8-ee&_nc_ht=scontent.ftbs10-1.fna&oh=00_AfBOE12YqMrOhRD1R3OR4Ww9XdTcxEg25hBXyvDpM8JCxA&oe=63AD7952" alt="Saba Fesvianidze">
+        <div class="text">
+            <h1>Saba Fesvi</h1>
+            <h4 style="letter-spacing: 5px;">Photographer</h4>
+        </div>
+        <div class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+    </div>
+
+    <div class="wrapper">
+    <div class="phimg">
+        <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/ocean.jpg">
+        <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/ocean2.jpg">
+        <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/falls2.jpg">
+        <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/mountainskies.jpg">
+        <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/mountains2.jpg">
+    </div>
+    <div class="cont">
+        <h3>Contact</h3>
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl.
+         Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna 
+         enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
+          congue ullam corper. Praesent tincidunt sed tellus.</p><br>
+          <form action="#">
+            <label for="name">
+                <p>Name</p>
+            </label>
+            <input type="text" id="name">
+            <label for="Email">
+                <p>Email</p>
+            </label>
+            <input type="text" id="Email">
+            <label for="Message">
+                <p>Message</p>
+            </label>
+            <input type="text" id="Message">
+            <input type="submit" value="Send">
+          </form><br>
+          <p id="byme">Created by <a href="#">Saba Fesvianidze</a></p>
+    </div>
+    </div>
+   
+
+</body>
+</html>
